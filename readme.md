@@ -2,7 +2,7 @@
 Xây dựng 1 ứng dụng todolist bằng Redux Core
 
 ## Screenshots
-![App Screenshot](./dist/preview.png)
+![App Screenshot](./public/preview.png)
 **[My Demo App in Vercel](http://todo-redux-app-sigma.vercel.app/)**
 
 
