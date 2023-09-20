@@ -1,31 +1,36 @@
-import { Typography, Divider } from 'antd'
+import React from 'react'
 import './App.css'
-import Filters from '../src/components/Filters'
-import TodoList from '../src/components/TodoList'
+import Exam from './redux/Exam'
 
-const { Title } = Typography;
+export default function App() {
 
-function App() {
+
+    // Imutation: Bat bien
+    const arr = [1,2,3]
+    let arr2 = arr
+    // arr2.push(4)
+    // console.log(arr);
+
+
+    let arrSlice = arr.slice()
+    arrSlice.push(4)
+    console.log('arrSlice: ', arr)
+
+    let arrConcat = arr.concat()
+    arrConcat.push(4)
+    console.log('arrConcat: ', arr)
+
+
+    let arrMap = arr.map(e => e)
+    arrMap.push(5)
+    console.log('arrMap: ', arrMap)
+    console.log('arrMap: ', arr)
+
+
   return (
-    <div
-      style={{
-        width: 500,
-        margin: '0 auto',
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: 'white',
-        padding: 20,
-        boxShadow: '0 0 10px 4px #bfbfbf',
-        borderRadius: 5,
-        height: '90vh',
-      }}
-    >
-      <Title style={{ textAlign: 'center' }}> REDUX TODO </Title>
-      <Filters />
-      <Divider />
-      <TodoList />
+    <div>
+        <h1>App</h1>
+        <Exam />
     </div>
   )
 }
-
-export default App

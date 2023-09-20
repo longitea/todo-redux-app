@@ -24,7 +24,7 @@ export default function index({ name, priority, completed }) {
             }}
         >
             <Checkbox checked={checked} onChange={toggleCheckbox}>
-                {name}
+ {name}
             </Checkbox>
             <Tag color={priorityColorMapping[priority]} style={{ margin: 0 }}>
                 {priority}
